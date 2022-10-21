@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="38dp"
+        android:onClick="dowavino"
+        android:text="Виноград"
+        app:layout_constraintBottom_toTopOf="@+id/imageapple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <RadioButton
+        android:id="@+id/pear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="dowloadpear"
+        android:text="Груша"
+        app:layout_constraintEnd_toStartOf="@+id/grape"
+        app:layout_constraintStart_toEndOf="@+id/apple"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <RadioButton
+        android:id="@+id/apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="13dp"
+        android:onClick="dowloadapple"
+        android:text="Яблоко"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toStartOf="@+id/pear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/grape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="488dp"
+        android:onClick="dowloadgrape"
+        android:text="Виноград"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pear"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="156dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/apple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/apple" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:onClick="dowapple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="282dp"
+        android:layout_marginBottom="2dp"
+        android:text="Яблоко"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apple" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:onClick="dowgrup"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="282dp"
+        android:layout_marginBottom="2dp"
+        android:text="Груша"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <ImageView
+        android:id="@+id/imageapple"
+        android:layout_width="124dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="137dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imagegrusha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/imagegrusha"
+        android:layout_width="124dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="243dp"
+        android:visibility="invisible"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imagevinogradd"
+        app:layout_constraintStart_toEndOf="@+id/imageapple"
+        app:layout_constraintTop_toBottomOf="@+id/pear"
+        app:srcCompat="@drawable/grusha" />
+
+    <ImageView
+        android:id="@+id/imagevinogradd"
+        android:layout_width="124dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="100dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagegrusha"
+        app:layout_constraintTop_toBottomOf="@+id/grape"
+        app:srcCompat="@drawable/vinogradd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
